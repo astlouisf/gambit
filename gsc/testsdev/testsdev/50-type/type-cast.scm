@@ -1,0 +1,10 @@
+(declare (extended-bindings) (not constant-fold) (not safe))
+
+(println (##type-cast #!eof 2))
+(println (##type-cast 1 2))
+(println (##type-cast #f 2))
+(println (##type-cast #t 2))
+(println (##type-cast 'sym 2))
+(println (##type-cast (##list 1 2 3) 2))
+(println (##type-cast '() 2))
+(println (##type-cast 1.0 2))

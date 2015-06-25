@@ -1,0 +1,29 @@
+This directory contains basic tests of the compiler for functions
+associated to symbols.
+
+The only data types required by these tests are:
+
+- fixnum integers
+- booleans
+- strings
+- symbols
+
+The only primitive procedures required by these tests are:
+
+- println: which is always used to print a single fixnum, boolean or string
+- ##not
+- ##eq?
+- ##boolean?
+- ##fixnum?
+- ##fx=?
+- ##string-ref
+- ##string-set!
+- ##string->symbol
+- ##symbol->string
+- ##make-uninterned-symbol
+- ##symbol-interned?
+- ##symbol-hash
+- ##symbol-name
+- ##symbol-name-set!
+- ##symbol?
+

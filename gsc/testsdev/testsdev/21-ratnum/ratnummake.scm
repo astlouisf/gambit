@@ -1,0 +1,27 @@
+(declare (extended-bindings) (not constant-fold) (not safe))
+
+(define a (##not 123))
+(define b (##not f))
+(define c "")
+(define d 1.5)
+(define e (##make-vector 2 999))
+(define f (##list 1 2 3))
+(define g (##ratnum-make 11 3))
+(define h (##ratnum-make 2 3))
+
+
+(define (test x)
+  (println (##ratnum? x))
+  (println (if (##ratnum? x) "ratnum" "not ratnum")))
+
+(test 0)
+(test 1)
+(test a)
+(test b)
+(test c)
+(test d)
+(test e)
+(test f)
+(test (##cdr f))
+(test g)
+(test h)
